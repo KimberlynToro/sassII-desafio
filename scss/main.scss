@@ -4,103 +4,135 @@
     box-sizing: border-box;
 }
 
-/* Header */
-header{
-    .logo{
-        width: 120px;
-    
-    &:hover{
-        transform: skew(15deg);
-        transition: 3s;
-      }
-    }
-    
-    .nav-link{
-    color: #fff;
-    }
-    .navbar-nav .nav-link.active{
-        color: #fff;
-    }
-    .navbar-toggler-icon{
-        color: #fff;
-    }
-    
-    .nav-link:focus, .nav-link:hover{
-        color: darkgoldenrod;
-    }
+@import'./variables/colores';
+@import'./variables/extend';
 
-}
+@import'./secciones/header';
+@import'./secciones/footer';
 
 
 
-/* Main */
-
-
+/* Main index*/
 main{
     div{
         margin: 18px;
         padding: 18px;
     }
 
-    .carousel-inner{
+    .inicio{
         display: flex;
+        justify-content: space-evenly
     }
-    
+
+
     p{
-        padding: 13px;
-        margin: 20px 5px 30px 15px;
-        font-size: 40px;
-        font-family: 'Square Peg', cursive;
-        font-weight: bold;
-        color: black;
-        align-items: center;
-        text-align: center;
-        font-size: 18px;
+      @extend %estiloParrafo;
+   }
+   
+   .card-text{
+    @extend %estiloH3;
+
+   }
+   
+
+   .carousel-inner{
+    display: flex;
     }
-    
-    .carousel-control-prev-icon {
-    display: inline-block;
-    width: 63px;
-    height: 37px;
-    background-repeat: no-repeat;
-    background-position: 100%;
-    margin: 13px;
-    }
-    
-    .carousel-control-prev {
-    left: 41px;
-    }
+}
+
+//  PRODUCTOS //
+
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+// CONTACTO //
+.main_contacto form {
+   @extend %estiloContacto;
+}
+
+/* H2 Y H3 DE PRODUCTOS,AYUDA,PREGUNTAS Y CONTACTO */
+h2 {
+    @extend %estiloH2;
 
 }
 
 
+/* NOVEDAES */
 
-
-
-footer{
-    background-color: black;
-
-    img{
-        height: 64px;
-        padding: 5px;
-    }
-    
-    div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 98px;
-    
-    }
- 
+.grid-container{
+    margin: 20px;
+    padding: 18px;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    justify-items: center;
+    grid-row-gap: 15px;
 }
 
+.grid-container img{
+    height: 300px;
+}
 
+.video_moda{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Media querys */
+
+@media (max-width: 968px){
+    .grid-container {
+        grid-template-columns: repeat(2,2fr);
+    }
+}
 
 @media (max-width: 820px) {
     .carousel-control-prev{
         left: 64px;
     }
 }
+
+@media (max-width: 650px){
+    .inicio {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main div {
+        margin: 1px;
+        padding: 18px;
+    }
+
+    .carousel-inner{
+        display: flex;
+        margin: 0;      
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1,2fr);
+    }
+
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

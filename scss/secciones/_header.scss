@@ -1,0 +1,26 @@
+/* Header */
+.header{
+    &__logo{
+        width: 120px;
+    
+    &:hover{
+        transform: skew(15deg);
+        transition: 3s;
+      }
+    }
+    
+    .nav-link{
+    color: $navegadorLink;
+    }
+    .navbar-nav .nav-link.active{
+        color: $navegadorLink;
+    }
+    .navbar-toggler-icon{
+        color: $navegadorLink;
+    }
+    
+    .nav-link:focus, .nav-link:hover{
+        color:$hovernav;
+    }
+
+}
