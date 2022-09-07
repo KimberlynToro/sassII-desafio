@@ -5,7 +5,7 @@
 }
 
 @mixin H2Style ($padding) { 
-    font-family:'Square Peg', cursive;
+    font-family:$texto1;
     color: black;
     font-weight: bold;
     padding: $padding

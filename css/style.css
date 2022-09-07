@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Amaranth&family=Mouse+Memoirs&family=Square+Peg&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -93,7 +94,7 @@ main .carousel-inner {
 
 /* H2 Y H3 DE PRODUCTOS,AYUDA,PREGUNTAS Y CONTACTO */
 h2 {
-  font-family: 'Square Peg', cursive;
+  font-family: "Amaranth", sans-serif;
   color: black;
   font-weight: bold;
   padding: 13px; }
