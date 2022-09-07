@@ -6,6 +6,9 @@
 
 @import'./variables/colores';
 @import'./variables/extend';
+@import'./variables/mixin'; 
+
+
 
 @import'./secciones/header';
 @import'./secciones/footer';
@@ -27,6 +30,7 @@ main{
 
     p{
       @extend %estiloParrafo;
+      @include ParrafoStyle($color2);
    }
    
    .card-text{
@@ -57,7 +61,7 @@ main{
 /* H2 Y H3 DE PRODUCTOS,AYUDA,PREGUNTAS Y CONTACTO */
 h2 {
     @extend %estiloH2;
-
+    @include H2Style(13px)
 }
 
 

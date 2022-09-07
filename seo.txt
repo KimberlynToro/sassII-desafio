@@ -1,0 +1,6 @@
+1- Coloque etiqueta meta keywords en todos los html:
+Index:
+Productos:
+Faq:
+Contacto:
+Novedades:

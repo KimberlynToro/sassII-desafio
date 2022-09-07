@@ -1,0 +1,12 @@
+@mixin ParrafoStyle ($hovernav) {
+    font-family:'Square Peg', cursive;;
+    font-weight:bold ;
+    color: $hovernav;
+}
+
+@mixin H2Style ($padding) { 
+    font-family:'Square Peg', cursive;
+    color: black;
+    font-weight: bold;
+    padding: $padding
+}

@@ -7,9 +7,6 @@ main p {
   padding: 13px;
   margin: 20px 5px 30px 15px;
   font-size: 40px;
-  font-family: 'Square Peg', cursive;
-  font-weight: bold;
-  color: #8b900d;
   align-items: center;
   text-align: center;
   font-size: 25px; }
@@ -59,7 +56,7 @@ main .card-text {
   color: #fff; }
 
 .header .nav-link:focus, .header .nav-link:hover {
-  color: #e5de17; }
+  color: #e5a417; }
 
 footer {
   background-color: black; }
@@ -81,6 +78,11 @@ main .inicio {
   display: flex;
   justify-content: space-evenly; }
 
+main p {
+  font-family: 'Square Peg', cursive;
+  font-weight: bold;
+  color: hwb(58 15% 19%); }
+
 main .carousel-inner {
   display: flex; }
 
@@ -90,6 +92,12 @@ main .carousel-inner {
   justify-content: center; }
 
 /* H2 Y H3 DE PRODUCTOS,AYUDA,PREGUNTAS Y CONTACTO */
+h2 {
+  font-family: 'Square Peg', cursive;
+  color: black;
+  font-weight: bold;
+  padding: 13px; }
+
 /* NOVEDAES */
 .grid-container {
   margin: 20px;
